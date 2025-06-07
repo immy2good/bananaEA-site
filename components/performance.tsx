@@ -6,10 +6,10 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/
 
 export function Performance() {
   const performanceData = [
-    { month: "Jan", profit: 4.2, drawdown: 1.2 },
+    { month: "Jan", profit: 4.7, drawdown: 1.2 },
     { month: "Feb", profit: 3.8, drawdown: 0.9 },
     { month: "Mar", profit: 5.1, drawdown: 1.5 },
-    { month: "Apr", profit: 2.9, drawdown: 0.8 },
+    { month: "Apr", profit: 5.9, drawdown: 0.8 },
     { month: "May", profit: 4.7, drawdown: 1.3 },
     { month: "Jun", profit: 3.5, drawdown: 1.0 },
     { month: "Jul", profit: 5.3, drawdown: 1.4 },
@@ -21,7 +21,7 @@ export function Performance() {
   ]
 
   const stats = [
-    { label: "Win Rate", value: "68%" },
+    { label: "Win Rate", value: "72%" },
     { label: "Profit Factor", value: "2.7" },
     { label: "Avg. Trade", value: "+1.2%" },
     { label: "Max Drawdown", value: "7.3%" },
@@ -116,12 +116,12 @@ export function Performance() {
 
             <Card>
               <CardHeader className="pb-2 sm:pb-6">
-                <CardTitle className="text-lg sm:text-xl">Supported Currency Pairs</CardTitle>
-                <CardDescription className="text-sm">Optimized for these major and minor pairs</CardDescription>
+                <CardTitle className="text-lg sm:text-xl">Supported Markets</CardTitle>
+                <CardDescription className="text-sm">Optimized Indices and Currency Pairs</CardDescription>
               </CardHeader>
               <CardContent className="p-3 sm:p-6">
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 sm:gap-2">
-                  {["EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "USDCAD", "NZDUSD", "EURGBP", "EURJPY", "GBPJPY"].map(
+                  {["EURUSD", "GBPUSD", "USDJPY", "DAX40", "DOW30", "NASDAQ100", "EURGBP", "EURJPY", "GBPJPY"].map(
                     (pair, i) => (
                       <div
                         key={i}
