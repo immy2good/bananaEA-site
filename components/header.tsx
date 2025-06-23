@@ -32,10 +32,14 @@ export function Header() {
             Documentation
           </Link>
           <ThemeToggle />
-          <Button variant="outline" className="ml-4">
-            Login
-          </Button>
-          <Button>Get Started</Button>
+          <Link href="https://my.itradeaims.net/">
+            <Button variant="outline" className="ml-12">
+              Login
+            </Button>
+          </Link>
+          <Link href="https://my.itradeaims.net/">
+            <Button>Get Started</Button>
+          </Link>
         </nav>
         <button className="block md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -77,16 +81,16 @@ export function Header() {
               <ThemeToggle />
             </div>
             <div className="flex flex-col gap-2 mt-2">
-              <Button variant="outline" className="w-full">
-                <link href="https://my.itradeaims.net/" onClick={() => setIsMenuOpen(false)}>
-                Login
-                </link>
-              </Button>
-              <Button className="w-full">
-                <link href="https://my.itradeaims.net/" onClick={() => setIsMenuOpen(false)}>
-                Get Started
-                </link>
-              </Button>
+              <Link href="https://my.itradeaims.net/" onClick={() => setIsMenuOpen(false)}>
+                <Button variant="outline" className="w-full">
+                  Login
+                </Button>
+              </Link>
+              <Link href="https://my.itradeaims.net/" onClick={() => setIsMenuOpen(false)}>
+                <Button className="w-full">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </nav>
         </div>

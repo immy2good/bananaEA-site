@@ -13,12 +13,16 @@ export function Hero() {
                 BananaEA: Advanced Pattern Recognition Trading System
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Harness the power of Banana pattern recognition with our sophisticated MT4 Expert Advisor. Designed for
-                serious traders who demand precision, flexibility, and consistent results.
+                Harness the power of Banana pattern recognition with our
+                sophisticated MT4 Expert Advisor. Designed for serious traders
+                who demand precision, flexibility, and consistent results.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black">
+              <Button
+                size="lg"
+                className="bg-yellow-500 hover:bg-yellow-600 text-black"
+              >
                 Get Started
               </Button>
               <Button size="lg" variant="outline" asChild>
@@ -29,22 +33,24 @@ export function Hero() {
           <div className="flex items-center justify-center">
             <div className="relative w-full max-w-[500px] aspect-square">
               <Image
-                src="/placeholder.svg?height=600&width=600"
-                alt="BananaEA Trading Chart"
-                width={600}
-                height={600}
+                src="https://itradeaims.net/wp-content/uploads/2025/06/Banana-EA-MT4-Final.webp"
+                alt="BananaEA The Champion of Pattern Recognition Trading"
+                width={300}
+                height={400}
                 className="rounded-lg shadow-xl"
                 priority
               />
-              <div className="absolute -bottom-4 -right-4 bg-card border rounded-lg shadow-lg p-4 w-48">
+              <div className="absolute -bottom-2 -right-4 bg-card border rounded-lg shadow-lg p-4 w-48">
                 <div className="text-sm font-medium">Performance</div>
                 <div className="text-2xl font-bold text-yellow-500">+215%</div>
-                <div className="text-xs text-muted-foreground">Annual return*</div>
+                <div className="text-xs text-muted-foreground">
+                  Annual return*
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
