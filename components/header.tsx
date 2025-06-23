@@ -78,9 +78,15 @@ export function Header() {
             </div>
             <div className="flex flex-col gap-2 mt-2">
               <Button variant="outline" className="w-full">
+                <link href="https://my.itradeaims.net/" onClick={() => setIsMenuOpen(false)}>
                 Login
+                </link>
               </Button>
-              <Button className="w-full">Get Started</Button>
+              <Button className="w-full">
+                <link href="https://my.itradeaims.net/" onClick={() => setIsMenuOpen(false)}>
+                Get Started
+                </link>
+              </Button>
             </div>
           </nav>
         </div>
